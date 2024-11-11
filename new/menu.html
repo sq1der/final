@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - EspressoDay</title>
+    <link rel="stylesheet" href="light.css">
+</head>
+<body>
+    <div id="current-date"></div>
+    <header class="header-section">
+        <h1>EspressoDay</h1>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a> |
+            <a href="menu.html" class="nav-link">Menu</a> |
+            <a href="news.html" class="nav-link">News</a>
+        </nav>
+    </header>   
+    <main>
+        <section id="menu" class="content-section">
+            <h2 class="section-heading">Menu</h2>
+            <p class="paragraph-text">Discover our delicious coffee blends and mouth-watering pastries.</p>
+            <figure class="image-thumbnail">
+                <img width=400 src="https://avatars.mds.yandex.net/i?id=2851f6595c742405afe47d11100f90a14752120b-5700446-images-thumbs&n=13" alt="A cup of espresso">
+                <figcaption>Our signature espresso, brewed to perfection.</figcaption>
+            </figure>
+        </section>
+        <div id="filter-section">
+        <select id="category-filter">
+            <option value="all">Все категории</option>
+            <option value="coffee">Кофе</option>
+            <option value="tea">Чай</option>
+            <option value="snacks">Закуски</option>
+        </select>
+        </div>
+        <ul id="item-list">
+            <li class="item coffee">Эспрессо</li>
+            <li class="item tea">Зеленый чай</li>
+            <li class="item snacks">Круассан</li>
+            <li class="item coffee">Латте</li>
+        </ul>
+    <hr>    
+    </main>
+    <footer>
+        <p>EspressoDay - Your daily dose of happiness.</p>
+        <p>&copy; 2024 EspressoDay | Contact us <a href="mailto:Espressoday2023@gmail.com">Espressoday2023@gmail.com</a></p>
+        <p>Created by Aman Belgibay</p>
+    </footer>
+    <script src="validation.js"></script>
+    <script src="script.js"></script>
+    <script src="filter.js"></script>
+</body>
+</html>

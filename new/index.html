@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspressoDay Café</title>
+    <link rel="stylesheet" href="light.css">
+
+</head>
+<body>
+    <div id="current-date"></div>
+    <header class="header-section">
+        <h1>EspressoDay</h1>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a> |
+            <a href="menu.html" class="nav-link">Menu</a> |
+            <a href="about.html" class="nav-link">About</a> |
+            <a href="news.html" class="nav-link">News</a> |
+            <a href="#about" class="nav-link">About Us</a> |
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to EspressoDay Café</h1> 
+        <div id="auth-container">
+            <div id="login-form" class="auth-form">
+                <h2>Вход</h2>
+                <input type="text" id="username" placeholder="Имя пользователя">
+                <input type="password" id="password" placeholder="Пароль">
+                <button onclick="login()">Войти</button>
+            </div>
+            
+            <div id="welcome" class="auth-form" style="display: none;">
+                <h2>Добро пожаловать, <span id="display-username"></span>!</h2>
+                <button onclick="logout()">Выйти</button>
+            </div>
+        </div>
+        <button id="theme-toggle-btn" class="subscribe-btn">Switch Theme</button>
+        <hr>
+        <section id="faq" class="content-section">
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <div>
+                <h3 class="faq-question">What are your opening hours?</h3>
+                <p class="faq-answer" style="display: none;">We are open from 8 AM to 11 PM every day.</p>
+            </div>
+            <div>
+                <h3 class="faq-question">Where are you located?</h3>
+                <p class="faq-answer" style="display: none;">We are located at 27/1 Ilyas Omarova Street, Astana.</p>
+            </div>
+        </section>
+        <hr>
+        <button class="subscribe-btn" id="popup-btn">Subscribe</button>
+
+        <div id="popup-form" style="display: none;">
+            <div class="popup-content">
+                <span id="close-popup">&times;</span>
+                <h2>Subscribe to our newsletter</h2>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="button-container">
+            <button id="bg-change-btn">Change Background Color</button>
+        </div>
+    </main>
+    
+    <footer class="footer-bg">
+        <p>EspressoDay - Your daily dose of happiness.</p>
+        <p>&copy; 2024 EspressoDay | Contact us <a href="mailto:Espressoday2023@gmail.com">Espressoday2023@gmail.com</a></p>
+        <p>Created by Aman Belgibay</p>
+    </footer>
+    <script src="validation.js"></script>
+    <script src="script.js"></script>
+    <script src="filter.js"></script>
+</body>
+</html>
