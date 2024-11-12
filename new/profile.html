@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EspressoDay Café</title>
+    <link rel="stylesheet" href="light.css">
+</head>
+<body>
+    <div id="current-date"></div>
+    <header class="header-section">
+        <h1>EspressoDay</h1>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a> |
+            <a href="menu.html" class="nav-link">Menu</a> |
+            <a href="about.html" class="nav-link">About</a> |
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    <button id="theme-toggle-btn" class="subscribe-btn" style="display: none;">Switch Theme</button>
+    <main>
+        <h1>Welcome to Your Profile</h1>
+        <div id="profile-container" class="auth-form">
+            <h2>Account Details</h2>
+            <p><strong>Username:</strong> <span id="profile-username"></span></p>
+            <p><strong>Email:</strong> <span id="profile-email"></span></p>
+        <button onclick="logout()" >Logout</button>
+        </div>
+    </main>
+    <footer class="footer-bg">
+        <p>EspressoDay - Your daily dose of happiness.</p>
+        <p>&copy; 2024 EspressoDay | Contact us <a href="mailto:Espressoday2023@gmail.com">Espressoday2023@gmail.com</a></p>
+        <p>Created by Aman Belgibay</p>
+    </footer>
+    <script src="changetheme.js"></script>
+    <script src="profile.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - EspressoDay Café</title>
+    <link rel="stylesheet" href="light.css">
+</head>
+<body>
+    <div id="current-date"></div>
+    <header class="header-section">
+        <h1>EspressoDay</h1>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a> |
+            <a href="menu.html" class="nav-link">Menu</a> |
+            <a href="about.html" class="nav-link">About</a> |
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Create Your Account</h1>
+        <div id="signup-container">
+            <div id="signup-form" class="auth-form">
+                <h2>Sign Up</h2>
+                <input type="text" id="new-username" placeholder="Username" required>
+                <input type="email" id="new-email" placeholder="Email" required>
+                <input type="password" id="new-password" placeholder="Password" required>
+                <button onclick="signup()">Create Account</button>
+                <p>Already have an account? <a href="index.html">Log In</a></p>
+            </div>
+        </div>
+    </main>
+    <button id="theme-toggle-btn" class="subscribe-btn" style="display: none;">Switch Theme</button>
+    <footer class="footer-bg">
+        <p>EspressoDay - Your daily dose of happiness.</p>
+        <p>&copy; 2024 EspressoDay | Contact us <a href="mailto:Espressoday2023@gmail.com">Espressoday2023@gmail.com</a></p>
+        <p>Created by Aman Belgibay</p>
+    </footer>
+    <script src="changetheme.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

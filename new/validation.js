@@ -5,12 +5,18 @@ function login() {
     const password = document.getElementById("password").value;
 
     if (username && password) {
-        localStorage.setItem("username", username);
-        localStorage.setItem("isLoggedIn", "true");
+        const userDetails = JSON.parse(localStorage.getItem("userDetails"));
 
-        showWelcomeMessage(username);
+        if (userDetails && userDetails.username === username && userDetails.password === password) {
+            localStorage.setItem("username", username);
+            localStorage.setItem("isLoggedIn", "true");
+
+            window.location.href = "profile.html";
+        } else {
+            alert("Invalid username or password.");
+        }
     } else {
-        alert("Введите имя пользователя и пароль.");
+        alert("Enter username and password.");
     }
 }
 

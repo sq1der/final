@@ -1,18 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const categoryFilter = document.getElementById("category-filter");
-    categoryFilter.addEventListener("change", filterItems);
-});
+document.addEventListener("DOMContentLoaded", loadFilters);
 
-function filterItems() {
-    const selectedCategory = document.getElementById("category-filter").value;
-    const items = document.querySelectorAll(".item");
+const categoryFilter = document.getElementById("category-filter");
+categoryFilter.addEventListener("change", applyFilter);
 
+function applyFilter() {
+    const selectedCategory = categoryFilter.value;
+    localStorage.setItem("selectedCategory", selectedCategory);
+
+    const items = document.querySelectorAll(".item-card");
     items.forEach(item => {
-        if (selectedCategory === "all" || item.classList.contains(selectedCategory)) {
-            item.style.display = "block";
-        } else {
-            item.style.display = "none";
-        }
+        const itemCategory = item.classList.contains(selectedCategory) || selectedCategory === "all";
+        item.style.display = itemCategory ? "block" : "none";
     });
 }
-    
+
+function loadFilters() {
+    const savedCategory = localStorage.getItem("selectedCategory") || "all";
+    categoryFilter.value = savedCategory;
+    applyFilter();
+}

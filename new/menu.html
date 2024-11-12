@@ -13,41 +13,109 @@
         <nav class="navbar">
             <a href="index.html" class="nav-link">Home</a> |
             <a href="menu.html" class="nav-link">Menu</a> |
-            <a href="news.html" class="nav-link">News</a>
+            <a href="about.html" class="nav-link">About</a> |
+            <a href="contact.html" class="nav-link">Contact</a>
         </nav>
-    </header>   
+    </header>
+    <button id="theme-toggle-btn" class="subscribe-btn" style="display: none;">Switch Theme</button>
     <main>
         <section id="menu" class="content-section">
-            <h2 class="section-heading">Menu</h2>
-            <p class="paragraph-text">Discover our delicious coffee blends and mouth-watering pastries.</p>
-            <figure class="image-thumbnail">
-                <img width=400 src="https://avatars.mds.yandex.net/i?id=2851f6595c742405afe47d11100f90a14752120b-5700446-images-thumbs&n=13" alt="A cup of espresso">
-                <figcaption>Our signature espresso, brewed to perfection.</figcaption>
-            </figure>
+            <h2 class="section-heading">Our Menu</h2>
+            <p class="paragraph-text">Explore our delightful coffee blends, teas, and snacks!</p>
+            
+            <div id="filter-section">
+                <label for="category-filter">Filter by Category:</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="tea">Tea</option>
+                    <option value="snacks">Snacks</option>
+                </select>
+            </div>
+            
+            <div id="item-list" class="menu-grid">
+                <div class="item-card coffee">
+                    <img src="espresso.jpg" alt="Espresso">
+                    <div class="item-info">
+                        <h3>Espresso - $2.50</h3>
+                        <p>Rich and bold shot of espresso.</p>
+                    </div>
+                </div>
+                <div class="item-card coffee">
+                    <img src="latte.jpg" alt="Latte">
+                    <div class="item-info">
+                        <h3>Latte - $3.00</h3>
+                        <p>Smooth espresso with steamed milk.</p>
+                    </div>
+                </div>
+                <div class="item-card coffee">
+                    <img src="capu.jpg" alt="Cappuccino">
+                    <div class="item-info">
+                        <h3>Cappuccino - $3.50</h3>
+                        <p>Espresso with a layer of frothed milk.</p>
+                    </div>
+                </div>
+                <div class="item-card coffee">
+                    <img src="americano.jpg" alt="Americano">
+                    <div class="item-info">
+                        <h3>Americano - $2.75</h3>
+                        <p>Espresso diluted with hot water.</p>
+                    </div>
+                </div>
+                <div class="item-card coffee">
+                    <img src="mocha.jpg" alt="Mocha">
+                    <div class="item-info">
+                        <h3>Mocha - $3.75</h3>
+                        <p>Espresso with chocolate and steamed milk.</p>
+                    </div>
+                </div>
+                <div class="item-card tea">
+                    <img src="green_tea.jpg" alt="Green Tea">
+                    <div class="item-info">
+                        <h3>Green Tea - $2.00</h3>
+                        <p>Refreshing and calming green tea.</p>
+                    </div>
+                </div>
+                <div class="item-card tea">
+                    <img src="black_tea.jpg" alt="Black Tea">
+                    <div class="item-info">
+                        <h3>Black Tea - $2.00</h3>
+                        <p>Classic and robust black tea.</p>
+                    </div>
+                </div>
+                <div class="item-card tea">
+                    <img src="chai_latte.jpg" alt="Chai Latte">
+                    <div class="item-info">
+                        <h3>Chai Latte - $3.25</h3>
+                        <p>Spiced tea with steamed milk.</p>
+                    </div>
+                </div>
+                <div class="item-card snacks">
+                    <img src="crua.jpg" alt="Croissant">
+                    <div class="item-info">
+                        <h3>Croissant - $2.50</h3>
+                        <p>Flaky and buttery croissant.</p>
+                    </div>
+                </div>
+                <div class="item-card snacks">
+                    <img src="keks.jpg" alt="Muffin">
+                    <div class="item-info">
+                        <h3>Muffin - $2.75</h3>
+                        <p>Soft and delicious muffin.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <div id="filter-section">
-        <select id="category-filter">
-            <option value="all">Все категории</option>
-            <option value="coffee">Кофе</option>
-            <option value="tea">Чай</option>
-            <option value="snacks">Закуски</option>
-        </select>
-        </div>
-        <ul id="item-list">
-            <li class="item coffee">Эспрессо</li>
-            <li class="item tea">Зеленый чай</li>
-            <li class="item snacks">Круассан</li>
-            <li class="item coffee">Латте</li>
-        </ul>
-    <hr>    
     </main>
+    
     <footer>
         <p>EspressoDay - Your daily dose of happiness.</p>
         <p>&copy; 2024 EspressoDay | Contact us <a href="mailto:Espressoday2023@gmail.com">Espressoday2023@gmail.com</a></p>
         <p>Created by Aman Belgibay</p>
     </footer>
+    
     <script src="validation.js"></script>
-    <script src="script.js"></script>
     <script src="filter.js"></script>
+    <script src="changetheme.js"></script>
 </body>
 </html>

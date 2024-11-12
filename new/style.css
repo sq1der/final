@@ -14,6 +14,7 @@ h1, h2 {
 
 p {
     color: #d9d9d9;
+    text-align: center;
 }
 
 .header-section, .footer-bg {
@@ -66,7 +67,7 @@ p {
 .paragraph-text {
     font-size: 16px;
     line-height: 1.8;
-    text-align: left;
+    text-align: ce;
     color: #e6e6e6;
 }
 
@@ -377,8 +378,7 @@ a:focus, input:focus, button:focus {
     font-weight: bold;
 }
 
-.auth-form input[type="text"],
-.auth-form input[type="password"] {
+.auth-form input[type="text"], .auth-form input[type="password"], .auth-form input[type="email"] {
     width: calc(100% - 24px); 
     padding: 10px;
     margin: 10px 5px; 
@@ -393,7 +393,7 @@ a:focus, input:focus, button:focus {
 .auth-form button {
     background-color: #FF4C4C;
     color: black;
-    padding: 10px 20px; /* Уменьшили кнопку немного */
+    padding: 10px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -452,4 +452,53 @@ a:focus, input:focus, button:focus {
 .item[style="display: none;"] {
     display: none;
 }
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.item-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    background-color: #fff;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+    padding: 16px;
+}
+
+.item-info h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.item-info p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+
 

@@ -337,8 +337,7 @@ a:focus, input:focus, button:focus {
     font-size: 24px;
 }
 
-.auth-form input[type="text"],
-.auth-form input[type="password"] {
+.auth-form input[type="text"], .auth-form input[type="password"], .auth-form input[type="email"] {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
@@ -427,3 +426,45 @@ a:focus, input:focus, button:focus {
     display: none;
 }
 
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.item-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+    background-color: #fff;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+}
+
+.item-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+    padding: 16px;
+}
+
+.item-info h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.item-info p {
+    color: #666;
+    font-size: 0.9em;
+}
